@@ -1,10 +1,263 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Data Scientist</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #1e40af;
+  --accent: #3b82f6;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --subtle: #64748b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+header {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+header p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: var(--accent);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.card {
+  background: var(--card);
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.company-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.company {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.date {
+  color: var(--subtle);
+  font-size: 0.9rem;
+}
+
+.job-title {
+  color: var(--primary);
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+ul {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skill-box {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: white;
+  color: var(--subtle);
+  font-size: 0.9rem;
+  border-top: 1px solid #e2e8f0;
+}
+</style>
 </head>
+
 <body>
-  <h1>Hello World!</h1>
-  <p>This is my GitHub Pages website.</p>
+
+<header>
+  <h1>Your Name</h1>
+  <p>Data Scientist | Machine Learning | Cloud Analytics | AI Systems</p>
+</header>
+
+<div class="container">
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="card">
+      <div class="company-row">
+        <div class="company">Texas Instruments</div>
+        <div class="date">Aug 2023 – Present</div>
+      </div>
+
+      <div class="job-title">Data Scientist, Digital Experience Analytics (Jan 2025 – Present)</div>
+      <ul>
+        <li>Led product analysis of a newly launched recommendation system on TI.com, evaluating performance and user engagement metrics.</li>
+        <li>Built scalable ETL pipeline using Vertex AI, reducing query processing costs by 20x.</li>
+        <li>Developed self-service report used by 100+ stakeholders, reducing ad-hoc requests by 50%.</li>
+        <li>Designed and deployed end-to-end anomaly detection platform on Google Cloud (Vertex AI + Cloud Run). Presented at internal conference.</li>
+        <li>Built web application with LLM-based explanations to centralize KPIs and accelerate anomaly root-cause analysis.</li>
+      </ul>
+
+      <div class="job-title">AI Processor Power Engineer, Multiphase Power (Aug 2023 – Jan 2025)</div>
+      <ul>
+        <li>Led development of AI server power modules; delivered first samples two months ahead of schedule.</li>
+        <li>Built automated Python testing system, increasing data collection speed by hours.</li>
+        <li>Created customer-facing performance visualizations and delivered technical presentations.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="company-row">
+        <div class="company">Meta</div>
+        <div class="date">Summer 2022</div>
+      </div>
+
+      <div class="job-title">Data Science Intern, Creator Monetization</div>
+      <ul>
+        <li>Conducted benchmark analysis of product ecosystem to evaluate impact of new launches.</li>
+        <li>Applied SQL & Python to identify creators most impacted by new features.</li>
+        <li>Designed and analyzed A/B tests to improve user experience.</li>
+        <li>Aggregated large-scale datasets and built complex SQL queries for actionable insights.</li>
+        <li>Presented findings to management to drive product decisions.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="company-row">
+        <div class="company">SIU Electrical & Computer Engineering Department</div>
+        <div class="date">Summer 2023</div>
+      </div>
+
+      <div class="job-title">Machine Learning Researcher</div>
+      <ul>
+        <li>Designed and evaluated XGBoost, Transformer, and CNN architectures for network intrusion detection.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="company-row">
+        <div class="company">Hill Technical Solutions</div>
+        <div class="date">Aug 2020 – Jan 2022</div>
+      </div>
+
+      <div class="job-title">Engineering Intern</div>
+      <ul>
+        <li>Developed Python simulation for satellite data transfer and target prediction.</li>
+        <li>Built phased array simulation deployed via Docker and Kubernetes.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Education</h2>
+
+    <div class="card">
+      <div class="company">University of Texas – Austin</div>
+      <p>Master’s in Data Science | GPA: 4.0</p>
+    </div>
+
+    <div class="card">
+      <div class="company">Southern Illinois University – Carbondale</div>
+      <p>B.S. Computer Engineering — <strong>Summa Cum Laude</strong></p>
+      <p>B.S. Mathematics | GPA: 4.0</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <strong>Programming</strong>
+        <p>Python, SQL</p>
+      </div>
+      <div class="skill-box">
+        <strong>Cloud & Data</strong>
+        <p>Google Cloud Platform (BigQuery, Cloud Run, Vertex AI)</p>
+      </div>
+      <div class="skill-box">
+        <strong>Data Science</strong>
+        <p>Pandas, NumPy, scikit-learn, XGBoost, TensorFlow</p>
+      </div>
+      <div class="skill-box">
+        <strong>Visualization</strong>
+        <p>Looker Studio</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Your Name | Built with GitHub Pages
+</footer>
+
 </body>
 </html>
